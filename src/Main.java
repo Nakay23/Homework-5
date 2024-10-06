@@ -3,7 +3,7 @@ public class Main {
         System.out.println("Hello world!");
 
         int clientOS = 0;
-        int clientDeviceYear = 2016;
+        int clientDeviceYear = 2015;
         if (clientOS == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
             }
@@ -19,9 +19,9 @@ public class Main {
 
         int year = 2024;
         if (year > 1584) {
-            if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+            if (year % 400 == 0 || year % 4 == 0) {
                 System.out.println(year + " год является високосным");
-            } else {
+            } else if (year % 100 == 0) {
                 System.out.println(year + " год не является високосным");
             }
         } else {
