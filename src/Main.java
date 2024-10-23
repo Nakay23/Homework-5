@@ -2,18 +2,15 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        int clientOS = 0;
+        int clientOS = 1;
         int clientDeviceYear = 2015;
         if (clientOS == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
-            }
-            if (clientOS == 1 && clientDeviceYear < 2015) {
+            } else if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }
-        if (clientOS == 0 && clientDeviceYear >= 2015) {
+            } else if (clientOS == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-            }
-            if (clientOS == 0 && clientDeviceYear < 2015) {
+            } else {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
 
@@ -42,43 +39,44 @@ public class Main {
         int monthNumber = 12;
         switch (monthNumber) {
             case 1:
-                System.out.println("Январь. Принадлежит к сезону зима");
+                System.out.println("Зима");
                 break;
             case 2:
-                System.out.println("Февраль. Принадлежит к сезону зима");
+                System.out.println("Зима");
                 break;
             case 3:
-                System.out.println("Март. Принадлежит к сезону весна");
+                System.out.println("Весна");
                 break;
             case 4:
-                System.out.println("Апрель. Принадлежит к сезону весна");
+                System.out.println("Весна");
                 break;
             case 5:
-                System.out.println("Май. Принадлежит к сезону весна");
+                System.out.println("Весна");
                 break;
             case 6:
-                System.out.println("Июнь. Принадлежит к сезону лето");
+                System.out.println("Лето");
                 break;
             case 7:
-                System.out.println("Июль. Принадлежит к сезону лето");
+                System.out.println("Лето");
                 break;
             case 8:
-                System.out.println("Август. Принадлежит к сезону лето");
+                System.out.println("Лето");
                 break;
             case 9:
-                System.out.println("Сентябрь. Принадлежит к сезону осень");
+                System.out.println("Осень");
                 break;
             case 10:
-                System.out.println("Октябрь. Принадлежит к сезону осень");
+                System.out.println("Осень");
                 break;
             case 11:
-                System.out.println("Ноябрь. Принадлежит к сезону осень");
+                System.out.println("Осень");
                 break;
             case 12:
-                System.out.println("Декабрь. Принадлежит к сезону зима");
+                System.out.println("Зима");
                 break;
             default:
                 System.out.println("Такого месяца не существует");
+                break;
         }
     }
 }
